@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    testvar01: "Hello"
+  tasks:
+    - debug:
+        var: testvar01
