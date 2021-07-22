@@ -1,9 +1,7 @@
-# ansible-playbook.yml
 ---
 - hosts: all
-  vars:
-    - testvar01: "Ola"
+  testvar01: Ola!
   tasks:
-    - name: Debug
+    - name: Print variable testvar01
       debug:
         var: testvar01
